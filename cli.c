@@ -45,10 +45,9 @@ void main()
     size_t n = 0;
     while (getline(&line, &n, fp) != EOF)
     {
-        if (strlen(line) <= 0)
-            break;
         printf("%s", line);
     }
+    
     free(line);
     fclose(fp);
     
